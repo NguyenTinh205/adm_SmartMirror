@@ -1,0 +1,31 @@
+/* 1. Kích hoạt lại Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 2. Ép trình duyệt xóa mọi viền trắng rác và đổi màu nền */
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+  height: 100%;
+  background-color: #0d1b2a; /* Màu Navy đồng bộ */
+}
+
+/* 3. Phá bỏ giới hạn khung mặc định của Vite */
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  max-width: none;
+}
+
+/* 4. Tắt thanh cuộn vướng víu ở Sidebar */
+.ant-layout-sider-children::-webkit-scrollbar {
+  display: none;
+}
+.ant-layout-sider-children {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
